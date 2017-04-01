@@ -2,9 +2,6 @@ package com.pearl.genius.abstractFactory.factory;
 
 import java.util.ArrayList;
 
-/**
- * Created by Administrator on 2015-07-22.
- */
 public abstract class Page {
 
 	protected String title;
