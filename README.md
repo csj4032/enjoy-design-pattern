@@ -12,7 +12,7 @@
 ## Factory Method
 	하위 클래스에서 인스턴스 작성하기
 
-## Singletom 
+## Singleton 
 	인스턴스를 한 개만 만들기
 	
 ## Prototype
@@ -27,5 +27,17 @@
 ## Bridge
 	기능 계층과 구현 계층 분리하기
 	
+## Strategy
+	 알고리즘을 모두 바꾸기
+
+## Composite
+	그릇과 내용물을 동일시하기
+
+## Decorator
+	장식과 내용물을 동일시하기
+	
 ## Command
 	명령을 클래스로 표현하기
+	
+## Visitor
+	데이터 구조를 돌아다니면서 처리하기
