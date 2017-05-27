@@ -1,7 +1,12 @@
-package com.pearl.genius.stage;
+package com.pearl.genius.state;
 
-/**
- * Created by Genius on 2017-05-25.
- */
-public class Context {
+public interface Context {
+
+	void setClock(int hour);
+
+	void changeState(State state);
+
+	void callSecurityCenter(String msg);
+
+	void recordLog(String msg);
 }

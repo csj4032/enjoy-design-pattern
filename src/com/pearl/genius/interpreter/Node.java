@@ -1,7 +1,7 @@
 package com.pearl.genius.interpreter;
 
-/**
- * Created by Genius on 2017-05-25.
- */
-public class Node {
+import java.text.ParseException;
+
+public abstract class Node {
+	abstract void parse(Context context) throws ParseException;
 }

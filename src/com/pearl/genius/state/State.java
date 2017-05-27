@@ -1,7 +1,12 @@
-package com.pearl.genius.stage;
+package com.pearl.genius.state;
 
-/**
- * Created by Genius on 2017-05-25.
- */
-public class Stage {
+public interface State {
+
+	void doClock(Context context, int hour);
+
+	void doUse(Context context);
+
+	void doAlarm(Context context);
+
+	void doPhone(Context context);
 }
