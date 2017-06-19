@@ -6,16 +6,12 @@ import java.io.IOException;
 
 public class BigChar {
 
-	private char charName;
 	private String fontData;
 
 	public BigChar(char charName) {
-		this.charName = charName;
-
-		try {
-			BufferedReader reader = new BufferedReader(new FileReader("big" + charName + ".txt"));
+		try (BufferedReader reader = new BufferedReader(new FileReader("big" + charName + ".txt"))) {
 			String line;
-			StringBuffer buf = new StringBuffer();
+			StringBuilder buf = new StringBuilder();
 			while ((line = reader.readLine()) != null) {
 				buf.append(line);
 				buf.append("\n");
