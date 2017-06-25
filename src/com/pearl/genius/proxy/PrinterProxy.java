@@ -1,15 +1,12 @@
 package com.pearl.genius.proxy;
 
-import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.Future;
-
 public class PrinterProxy implements Printable {
 
 	private String name;
 	private Printer real;
 
 	public PrinterProxy() {
-		CompletableFuture completableFuture = new CompletableFuture();
+
 	}
 
 	public PrinterProxy(String name) {
