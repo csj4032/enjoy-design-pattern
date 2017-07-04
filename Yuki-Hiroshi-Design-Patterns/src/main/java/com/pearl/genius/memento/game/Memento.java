@@ -1,11 +1,14 @@
 package com.pearl.genius.memento.game;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Data
 public class Memento {
 
-	private int money;
+	public int money;
 	private ArrayList fruits;
 
 	public Memento(int money) {

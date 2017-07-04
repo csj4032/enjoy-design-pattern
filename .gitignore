@@ -1,4 +1,4 @@
-/target
-/out
 /.idea
 *.iml
+/Head-First-Design-Patterns/build
+/Yuki-Hiroshi-Design-Patterns/build
