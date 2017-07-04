@@ -1,0 +1,10 @@
+# This file has a few test mappings for checking
+# the Menu_site class.
+
+item.1=Item One (no shortcut)
+item.2	=	Item Two (shortcut is ^T)	; T
+item.3	=Item Three (shortcut is F11); F11
+item.4	=Item 4 (shortcut is Alt-X); alt X
+item.5 = malformed line (no shortcut);
+item.6 = ; malformed line (no label);
+# item.7 is created, but is deliberately omitted from this file.
