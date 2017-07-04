@@ -6,4 +6,3 @@ findProject(':holub-on-patterns:life')?.name = 'life'
 include 'holub-on-patterns:database'
 findProject(':holub-on-patterns:database')?.name = 'database'
 include 'passionate-design-patterns'
-
