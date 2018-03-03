@@ -5,7 +5,7 @@ package com.pearl.genius.adapter;
  */
 public interface Print {
 
-	public abstract void printWeak();
+	void printWeak();
 
-	public abstract void printStrong();
+	void printStrong();
 }

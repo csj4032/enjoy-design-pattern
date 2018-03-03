@@ -5,5 +5,5 @@ package com.pearl.genius.iterator;
  */
 public interface Aggregate {
 
-	public abstract Iterator iterater();
+	Iterator iterator();
 }

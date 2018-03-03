@@ -5,7 +5,7 @@ package com.pearl.genius.iterator;
  */
 public interface Iterator {
 
-	public abstract boolean hasNext();
+	boolean hasNext();
 
-	public abstract Object next();
+	Object next();
 }

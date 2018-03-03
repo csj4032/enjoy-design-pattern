@@ -1,5 +1,8 @@
 package com.pearl.genius.iterator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by genius on 15. 7. 20..
  */
@@ -11,7 +14,10 @@ public class IteratorMain {
 		bookShelf.appendBook(new Book("BBB"));
 		bookShelf.appendBook(new Book("CCC"));
 		bookShelf.appendBook(new Book("DDD"));
-		Iterator it = bookShelf.iterater();
+		Iterator it = bookShelf.iterator();
+
+		List list = new ArrayList<>();
+		list.iterator();
 
 		while (it.hasNext()) {
 			Book book = (Book)it.next();
