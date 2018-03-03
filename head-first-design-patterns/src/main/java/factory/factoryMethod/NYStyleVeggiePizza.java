@@ -14,5 +14,3 @@ public class NYStyleVeggiePizza extends Pizza {
 		toppings.add("Red Pepper");
 	}
 }
-
-
