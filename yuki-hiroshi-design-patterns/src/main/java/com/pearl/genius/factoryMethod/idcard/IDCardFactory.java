@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class IDCardFactory extends Factory {
 
-	private List owners = new ArrayList();
+	private List<String> owners = new ArrayList();
 
 	@Override
 	protected Product createProduct(String owner) {

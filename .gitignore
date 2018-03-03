@@ -1,4 +1,5 @@
+/.gradle
 /.idea
 *.iml
-/Head-First-Design-Patterns/build
-/Yuki-Hiroshi-Design-Patterns/build
+/head-first-design-patterns/out
+/yuki-hiroshi-design-patterns/out

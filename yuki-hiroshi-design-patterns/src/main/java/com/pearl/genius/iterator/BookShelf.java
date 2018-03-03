@@ -16,7 +16,7 @@ public class BookShelf implements Aggregate {
 		return books[index];
 	}
 
-	public void appendBook(Book book) throws Exception {
+	public void appendBook(Book book) throws ArrayIndexOutOfBoundsException {
 		if (books.length > last) {
 			this.books[last] = book;
 			last++;
