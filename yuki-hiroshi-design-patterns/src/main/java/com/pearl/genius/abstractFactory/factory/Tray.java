@@ -2,11 +2,11 @@ package com.pearl.genius.abstractFactory.factory;
 
 import java.util.ArrayList;
 
-public abstract class Tary extends Item {
+public abstract class Tray extends Item {
 
 	protected ArrayList tray = new ArrayList();
 
-	public Tary(String caption) {
+	public Tray(String caption) {
 		super(caption);
 	}
 

@@ -29,5 +29,7 @@ public class AdapterMain {
 		PrintTrust pt = new PrintBannerTrust("World");
 		pt.printWeak();
 		pt.printStrong();
+
+
 	}
 }
