@@ -1,9 +1,6 @@
 package com.pearl.genius.builder;
 
-/**
- * Created by Administrator on 2015-07-28.
- */
-public class TextBuilder extends Builder {
+public class TextBuilder implements Builder {
 
 	private StringBuffer buffer = new StringBuffer();
 
@@ -32,6 +29,7 @@ public class TextBuilder extends Builder {
 		buffer.append("=============================\n");
 	}
 
+	@Override
 	public String getResult() {
 		return buffer.toString();
 	}

@@ -1,8 +1,5 @@
 package com.pearl.genius.builder;
 
-/**
- * Created by Administrator on 2015-07-28.
- */
 public class Director {
 
 	private Builder builder;
@@ -12,7 +9,7 @@ public class Director {
 	}
 
 	public void construct() {
-		builder.makeTitle("Greeting");
+		builder.makeTitle("greeting");
 		builder.makeString("아침과 낮에");
 		builder.makeItems(new String[]{"좋은 아침입니다.", "안녕하세요"});
 		builder.makeString("밤에");

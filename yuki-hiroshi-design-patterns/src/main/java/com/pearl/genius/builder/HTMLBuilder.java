@@ -4,10 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-/**
- * Created by Administrator on 2015-07-28.
- */
-public class HTMLBuilder extends Builder {
+public class HTMLBuilder implements Builder {
 
 	private String filename;
 	private PrintWriter writer;

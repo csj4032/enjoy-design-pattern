@@ -12,8 +12,8 @@ public class PrototypeTest {
 	@Before
 	public void setUp() {
 		manager = new Manager();
-		manager.register("warning box", new WarningMessageBox('*'));
-		manager.register("normal box", new NormalMessageBox('+'));
+		manager.register("warning box", new WarningMessageBox("*"));
+		manager.register("normal box", new NormalMessageBox("+"));
 	}
 
 	@Test
