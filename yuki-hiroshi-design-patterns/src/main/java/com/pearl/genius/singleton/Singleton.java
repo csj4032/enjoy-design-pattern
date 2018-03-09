@@ -1,8 +1,5 @@
 package com.pearl.genius.singleton;
 
-/**
- * Created by genius on 15. 7. 21..
- */
 public class Singleton {
 
 	//private static Singleton singleton = new Singleton();

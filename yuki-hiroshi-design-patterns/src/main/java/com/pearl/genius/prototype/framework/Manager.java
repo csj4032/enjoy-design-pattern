@@ -2,19 +2,16 @@ package com.pearl.genius.prototype.framework;
 
 import java.util.HashMap;
 
-/**
- * Created by genius on 15. 7. 21..
- */
 public class Manager {
 
-	private HashMap showcase = new HashMap();
+	private HashMap<String, MessageBox> showcase = new HashMap();
 
-	public void register(String name, Product proto) {
-		showcase.put(name, proto);
+	public void register(String name, MessageBox product) {
+		showcase.put(name, product);
 	}
 
-	public Product create(String protoname) {
-		Product p = (Product) showcase.get(protoname);
+	public MessageBox create(String name) {
+		MessageBox p = showcase.get(name);
 		return p.createClone();
 	}
 }
