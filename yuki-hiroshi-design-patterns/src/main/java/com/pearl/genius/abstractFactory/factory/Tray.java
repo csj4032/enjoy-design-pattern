@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public abstract class Tray extends Item {
 
-	protected ArrayList tray = new ArrayList();
+	protected ArrayList<Item> tray = new ArrayList();
 
 	public Tray(String caption) {
 		super(caption);

@@ -14,11 +14,11 @@ public class ListFactory extends Factory {
 
 	@Override
 	public Tray createTray(String caption) {
-		return null;
+		return new ListTray(caption);
 	}
 
 	@Override
 	public Page cretePage(String title, String author) {
-		return null;
+		return new ListPage(title, author);
 	}
 }
