@@ -1,4 +1,6 @@
 package factory.abstractfactory;
 
-public class Dough {
+public interface Dough {
+
+	String toString();
 }

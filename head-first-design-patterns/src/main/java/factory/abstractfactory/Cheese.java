@@ -1,4 +1,6 @@
 package factory.abstractfactory;
 
-public class Cheese {
+public interface Cheese {
+
+	String toString();
 }

@@ -1,4 +1,6 @@
 package factory.abstractfactory;
 
-public class Veggies {
+public interface Veggies {
+
+	String toString();
 }

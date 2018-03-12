@@ -1,4 +1,5 @@
 package factory.abstractfactory;
 
-public class Pepperoni {
+public interface Pepperoni {
+	String toString();
 }

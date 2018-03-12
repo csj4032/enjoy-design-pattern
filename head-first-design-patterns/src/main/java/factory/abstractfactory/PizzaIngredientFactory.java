@@ -1,10 +1,10 @@
 package factory.abstractfactory;
 
-public interface PizzaIngrediedientFactory {
+public interface PizzaIngredientFactory {
 
 	Dough createDough();
 
-	Sauce createSause();
+	Sauce createSauce();
 
 	Cheese createCheese();
 

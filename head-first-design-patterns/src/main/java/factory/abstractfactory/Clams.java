@@ -1,4 +1,6 @@
 package factory.abstractfactory;
 
-public class Clams {
+public interface Clams {
+
+	String toString();
 }
