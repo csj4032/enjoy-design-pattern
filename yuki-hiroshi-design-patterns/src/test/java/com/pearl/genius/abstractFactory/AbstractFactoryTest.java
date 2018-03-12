@@ -10,10 +10,13 @@ import org.junit.Test;
 public class AbstractFactoryTest {
 
 	private Factory factory;
+	private FactoryManager manager;
 
 	@Before
 	public void setUp() {
-		factory = Factory.getFactory("com.pearl.genius.abstractFactory.listfactory.ListFactory");
+		manager = FactoryManager.getInstance();
+		factory = manager.getFactory("list");
+		factory = manager.getFactory("table");
 	}
 
 	@Test

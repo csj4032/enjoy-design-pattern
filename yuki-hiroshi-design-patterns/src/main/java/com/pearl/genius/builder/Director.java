@@ -1,11 +1,15 @@
 package com.pearl.genius.builder;
 
+import java.util.Map;
+
 public class Director {
 
 	private Builder builder;
+	private Map<String,String> map;
 
 	public Director(Builder builder) {
 		this.builder = builder;
+		this.map = map;
 	}
 
 	public void construct() {

@@ -1,23 +1,11 @@
 package com.pearl.genius.abstractFactory.factory;
 
-public abstract class Factory {
+public interface Factory {
 
-	public static Factory getFactory(String classname) {
-		Factory factory = null;
-		try {
-			factory = (Factory) Class.forName(classname).newInstance();
-		} catch (ClassNotFoundException e) {
-			System.out.println("클래스 " + classname + "이 발견되지 않았습니다.");
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-		return factory;
-	}
+	Link createLink(String caption, String url);
 
-	public abstract Link createLink(String caption, String url);
+	Tray createTray(String caption);
 
-	public abstract Tray createTray(String caption);
-
-	public abstract Page cretePage(String title, String author);
+	Page cretePage(String title, String author);
 
 }

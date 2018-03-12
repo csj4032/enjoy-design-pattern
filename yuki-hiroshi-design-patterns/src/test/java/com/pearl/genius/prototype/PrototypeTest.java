@@ -14,6 +14,7 @@ public class PrototypeTest {
 		manager = new Manager();
 		manager.register("warning box", new WarningMessageBox("*"));
 		manager.register("normal box", new NormalMessageBox("+"));
+		manager.register("normal2 box", new Normal2MessageBox("++"));
 	}
 
 	@Test
@@ -25,5 +26,8 @@ public class PrototypeTest {
 
 		p1 = manager.create("normal box");
 		p1.use("Hello world");
+
+		p1 = manager.create("normal2 box");
+		p1.use("Hello world!!!!!!");
 	}
 }
