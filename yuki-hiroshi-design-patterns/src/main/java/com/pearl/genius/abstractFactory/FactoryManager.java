@@ -4,11 +4,8 @@ import com.pearl.genius.abstractFactory.factory.Factory;
 import com.pearl.genius.abstractFactory.listfactory.ListFactory;
 import com.pearl.genius.abstractFactory.tablefactory.TableFactory;
 
-import java.util.HashMap;
-
 public class FactoryManager {
 
-	private static HashMap<String, Factory> factoryHashMap = new HashMap();
 	private static FactoryManager manager;
 
 	private FactoryManager() {
@@ -18,18 +15,27 @@ public class FactoryManager {
 		if (manager == null) {
 			synchronized (FactoryManager.class) {
 				manager = new FactoryManager();
-				init();
 			}
 		}
 		return manager;
 	}
 
-	private static void init() {
-		factoryHashMap.put("list", new ListFactory());
-		factoryHashMap.put("table", new TableFactory());
+	public Factory getFactory(FactoryType type) {
+		return FactoryType.getFactory(type);
+	}
+}
+
+enum FactoryType {
+	LIST_FACTORY(new ListFactory()),
+	TABLE_FACTORY(new TableFactory());
+
+	private Factory factory;
+
+	FactoryType(Factory factory) {
+		this.factory = factory;
 	}
 
-	public Factory getFactory(String key) {
-		return factoryHashMap.get(key);
+	public static Factory getFactory(FactoryType type) {
+		return FactoryType.valueOf(type.name()).factory;
 	}
 }

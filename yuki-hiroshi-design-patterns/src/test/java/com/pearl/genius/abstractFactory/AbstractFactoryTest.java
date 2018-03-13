@@ -15,8 +15,8 @@ public class AbstractFactoryTest {
 	@Before
 	public void setUp() {
 		manager = FactoryManager.getInstance();
-		factory = manager.getFactory("list");
-		factory = manager.getFactory("table");
+		factory = FactoryType.getFactory(FactoryType.LIST_FACTORY);
+		factory = manager.getFactory(FactoryType.TABLE_FACTORY);
 	}
 
 	@Test
