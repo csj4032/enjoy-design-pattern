@@ -1,8 +1,5 @@
 package com.pearl.genius.composite.example01;
 
-/**
- * Created by Administrator on 2015-07-23.
- */
 public class Computer {
 
 	private Body body;

@@ -1,10 +1,10 @@
 package com.pearl.genius.bridge;
 
-public abstract class DisplayImpl {
+public interface DisplayImpl {
 
-	public abstract void rawOpen();
+	void rawOpen();
 
-	public abstract void rawPrint();
+	void rawPrint();
 
-	public abstract void rawClose();
+	void rawClose();
 }

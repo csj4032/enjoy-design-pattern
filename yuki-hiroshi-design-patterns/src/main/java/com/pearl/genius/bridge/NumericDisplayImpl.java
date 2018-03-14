@@ -1,12 +1,12 @@
 package com.pearl.genius.bridge;
 
-public class StringDisplayImpl implements DisplayImpl {
+public class NumericDisplayImpl implements DisplayImpl {
 
-	private String string;
+	private String number;
 	private int width;
 
-	public StringDisplayImpl(String string) {
-		this.string = string;
+	public NumericDisplayImpl(String string) {
+		this.number = string;
 		this.width = string.getBytes().length;
 	}
 
@@ -17,7 +17,7 @@ public class StringDisplayImpl implements DisplayImpl {
 
 	@Override
 	public void rawPrint() {
-		System.out.println("|" + string + "|");
+		System.out.println("|" + number + "|");
 	}
 
 	@Override
