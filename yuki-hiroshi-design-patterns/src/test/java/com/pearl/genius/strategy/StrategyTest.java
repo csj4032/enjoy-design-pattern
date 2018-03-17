@@ -1,17 +1,26 @@
 package com.pearl.genius.strategy;
 
-import java.util.Scanner;
+import org.junit.Before;
+import org.junit.Test;
 
-public class Main {
+import java.util.Random;
 
-	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int seed1 = sc.nextInt();
-		int seed2 = sc.nextInt();
+public class StrategyTest {
 
-		Player player1 = new Player("두리", new WinningStrategy(seed1));
-		Player player2 = new Player("하나", new ProbStrategy(seed2));
+	private Player player2;
+	private Player player1;
+	private Random random;
 
+	@Before
+	public void setUp() {
+		random = new Random();
+		player1 = new Player("두리", new WinningStrategy(random.nextInt()));
+		player2 = new Player("하나", new ProbStrategy(random.nextInt()));
+
+	}
+
+	@Test
+	public void strategyTest() {
 		for (int i = 0; i < 10; i++) {
 			Hand nextHand1 = player1.nextHand();
 			Hand nextHand2 = player2.nextHand();
@@ -29,7 +38,6 @@ public class Main {
 				player2.even();
 			}
 		}
-
 		System.out.println("Total result :");
 		System.out.println(player1.toString());
 		System.out.println(player2.toString());
