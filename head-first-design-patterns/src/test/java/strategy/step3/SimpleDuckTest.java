@@ -11,19 +11,22 @@ public class SimpleDuckTest {
 	List<Duck> ducks = new ArrayList();
 	private Duck mallardDuck;
 	private Duck redHeadDuck;
+	private Duck rubberDuck;
 
 	@Before
 	public void setUp() {
 		mallardDuck = new MallardDuck();
 		redHeadDuck = new RedHeadDuck();
+		rubberDuck = new RubberDuck();
 		ducks.add(mallardDuck);
 		ducks.add(redHeadDuck);
+		ducks.add(rubberDuck);
 	}
 
 	@Test
 	public void simpleDuckTest() {
 		for (Duck duck: ducks) {
-			duck.setFlyBehavior(() -> System.out.println("날아보자"));
+			duck.setFlyBehavior(new FlyRocketPowered());
 			duck.setQuackBehavior(() -> System.out.println("꽥"));
 			duck.performFly();
 			duck.performQuack();

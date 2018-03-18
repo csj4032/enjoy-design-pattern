@@ -20,6 +20,7 @@ public class SimpleDuckTest {
 	@Test
 	public void simpleDuckTest() {
 		for (Object object : ducks) {
+
 			if (object instanceof MallardDuck) {
 				MallardDuck duck = (MallardDuck) object;
 				duck.quack();
@@ -34,6 +35,13 @@ public class SimpleDuckTest {
 				duck.swim();
 				duck.display();
 				duck.fly();
+			}
+
+			if (object instanceof RubberDuck) {
+				RubberDuck duck = (RubberDuck) object;
+				duck.quack();
+				duck.swim();
+				duck.display();
 			}
 		}
 	}

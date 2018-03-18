@@ -5,6 +5,7 @@ public class Display {
 	private DisplayImpl impl;
 
 	public Display(DisplayImpl impl) {
+		//delegate
 		this.impl = impl;
 	}
 
