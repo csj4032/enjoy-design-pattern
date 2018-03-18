@@ -1,8 +1,9 @@
 include 'head-first-design-patterns'
-include 'yuki-hiroshi-design-patterns'
 include 'holub-on-patterns'
+include 'holub-on-patterns:holubSQL'
 include 'holub-on-patterns:life'
-findProject(':holub-on-patterns:life')?.name = 'life'
-include 'holub-on-patterns:database'
-findProject(':holub-on-patterns:database')?.name = 'database'
 include 'passionate-design-patterns'
+include 'yuki-hiroshi-design-patterns'
+findProject(':holub-on-patterns:life')?.name = 'life'
+findProject(':holub-on-patterns:holubSQL')?.name = 'holubSQL'
+
