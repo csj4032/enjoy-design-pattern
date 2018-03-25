@@ -19,6 +19,10 @@ public class Computer {
 		this.monitor = monitor;
 	}
 
+	public void addSpeaker(Speaker speaker) {
+		this.speaker= speaker;
+	}
+
 	public int getPrice() {
 		int bodyPrice = body.getPrice();
 		int keyboardPrice = keyboard.getPrice();
