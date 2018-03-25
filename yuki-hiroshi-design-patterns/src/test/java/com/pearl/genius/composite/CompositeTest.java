@@ -2,6 +2,9 @@ package com.pearl.genius.composite;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 그릇과 내용물을 동일시해서 재귀적인 구조를 만들기 위한 디자인 패턴
  *
@@ -11,10 +14,40 @@ import org.junit.Test;
  * 객체들의 관계를 트리 구조로 구성하여 부분-전체 계층을 표현하는 패턴으로,
  * 사용자가 단일 객체와 복합 객체 모두 동일하게 다루도록 한다.
  */
+
+/**
+ID	PARENT_ID	NAME
+1	NULL		원더배송
+2	1			식품
+3	1			생활
+4	NULL		패션
+5	4			여성의류
+**/
+
+class Menu {
+	public Menu(long id, long parentId, String name) {
+		this.id = id;
+		this.parentId = parentId;
+		this.name = name;
+	}
+
+	private long id;
+	private long parentId;
+	private String name;
+}
+
 public class CompositeTest {
 
 	@Test
 	public void compositeTest() {
+
+		List<Menu> menus= new ArrayList();
+		menus.add(new Menu());
+		menus.add(new Menu());
+		menus.add(new Menu());
+		menus.add(new Menu());
+		menus.add(new Menu());
+
 		System.out.println("Making root entries");
 		Directory rootDir = new Directory("root");
 		Directory binDir = new Directory("bin");
