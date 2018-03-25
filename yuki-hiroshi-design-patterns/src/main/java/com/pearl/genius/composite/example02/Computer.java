@@ -3,9 +3,6 @@ package com.pearl.genius.composite.example02;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Administrator on 2015-07-23.
- */
 public class Computer extends ComputerDevice {
 
 	private List<ComputerDevice> components = new ArrayList<ComputerDevice>();

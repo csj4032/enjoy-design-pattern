@@ -1,8 +1,5 @@
 package com.pearl.genius.composite.example02;
 
-/**
- * Created by Administrator on 2015-07-23.
- */
 public class Speaker extends ComputerDevice {
 
 	private int price;

@@ -2,6 +2,10 @@ package com.pearl.genius.composite;
 
 import org.junit.Test;
 
+/**
+ * 전체-부분의 관계를 갖는 객체들 사이의 관계를 정의할 때 유용하다.
+ * 그리고 클라이언트는 전체와 부분을 구분하지않고 동일한 인터페이스를 사용할 수 있다.
+ */
 public class CompositeTest {
 
 	@Test
