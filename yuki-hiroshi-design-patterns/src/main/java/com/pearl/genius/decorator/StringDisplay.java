@@ -1,4 +1,4 @@
-package com.pearl.genius.decotator;
+package com.pearl.genius.decorator;
 
 public class StringDisplay extends Display {
 
