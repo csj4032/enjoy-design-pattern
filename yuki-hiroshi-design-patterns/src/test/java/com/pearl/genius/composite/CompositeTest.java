@@ -42,11 +42,6 @@ public class CompositeTest {
 	public void compositeTest() {
 
 		List<Menu> menus= new ArrayList();
-		menus.add(new Menu());
-		menus.add(new Menu());
-		menus.add(new Menu());
-		menus.add(new Menu());
-		menus.add(new Menu());
 
 		System.out.println("Making root entries");
 		Directory rootDir = new Directory("root");
