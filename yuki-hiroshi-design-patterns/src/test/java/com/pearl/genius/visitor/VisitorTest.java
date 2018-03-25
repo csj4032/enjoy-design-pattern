@@ -1,8 +1,14 @@
-package com.pearl.genius.vistor;
+package com.pearl.genius.visitor;
 
-public class Main {
+import com.pearl.genius.vistor.Directory;
+import com.pearl.genius.vistor.File;
+import com.pearl.genius.vistor.ListVisitor;
+import org.junit.Test;
 
-	public static void main(String[] args) {
+public class VisitorTest {
+
+	@Test
+	public void visitorTest() {
 		Directory rootDir = new Directory("root");
 		Directory binDir = new Directory("bin");
 		Directory tmpDir = new Directory("tmp");

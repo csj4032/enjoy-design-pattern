@@ -5,14 +5,14 @@ import java.util.List;
 
 public abstract class LetterComposite {
 
-	private List<LetterComposite> chidren = new ArrayList();
+	private List<LetterComposite> children = new ArrayList();
 
 	public void add(LetterComposite letter) {
-		chidren.add(letter);
+		children.add(letter);
 	}
 
 	public int count() {
-		return chidren.size();
+		return children.size();
 	}
 
 	protected abstract void printThisBefore();
@@ -21,7 +21,7 @@ public abstract class LetterComposite {
 
 	public void print() {
 		printThisBefore();
-		chidren.forEach(e -> e.print());
+		children.forEach(e -> e.print());
 		printThisAfter();
 	}
 }

@@ -5,6 +5,7 @@ public class RoadDisplayWithTrafficCrossing extends RoadDisplay {
 	public void draw() {
 		super.draw();
 		drawTraffic();
+		drawCrossing();
 	}
 
 	private void drawTraffic() {
