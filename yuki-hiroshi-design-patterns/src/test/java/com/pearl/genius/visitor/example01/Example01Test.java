@@ -19,5 +19,9 @@ public class Example01Test {
 		assertFalse(file.sender(new KakaoTalk()));
 		assertTrue(file.sender(new Line()));
 		assertTrue(file.sender(new Telegram()));
+
+		Image image = new Image("genius", "pearl", "hell world", "image", 200, 2000);
+		image.sender(new KakaoTalk());
+
 	}
 }

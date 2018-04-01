@@ -19,8 +19,9 @@ public class chainofResponsibilityTest {
 		Support diana = new LimitSupport("Diana", 200);
 		Support elmo = new OddSupport("Elmo");
 		Support fred = new LimitSupport("Fred", 300);
+		Support genius = new LimitGeniusSupport("genius", 300);
 
-		alice.setNext(bob).setNext(charlie).setNext(diana).setNext(elmo).setNext(fred);
+		alice.setNext(diana).setNext(bob).setNext(charlie).setNext(elmo).setNext(fred).setNext(genius);
 
 		for (int i = 0; i < 500; i += 33) {
 			alice.support(new Trouble(i));

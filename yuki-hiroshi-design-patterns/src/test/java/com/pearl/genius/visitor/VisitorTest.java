@@ -6,8 +6,9 @@ import com.pearl.genius.vistor.ListVisitor;
 import org.junit.Test;
 
 /**
- * 처리를 데이ㅣ터 구조에서 분리하는 일
+ * 처리를 데이터 구조에서 분리하는 일
  * Double Dispatch
+ * Receiver Parameter
  * Open-Closed Principle
  */
 public class VisitorTest {
