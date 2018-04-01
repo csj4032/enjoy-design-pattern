@@ -3,7 +3,11 @@ package com.pearl.genius.chainofResponsibility;
 import org.junit.Test;
 
 /**
- * 복수의 오브젝트(객체)를 사슬(chain)처럼 연결 해 두면, 그 오브젝트(객체)의 사슬을 차례로 돌아다니면서 목적한 오브젝트(객체)를 결정하는 방법
+ * 복수의 오브젝트(객체)를 사슬(chain)처럼 연결 해 두면,
+ * 그 오브젝트(객체)의 사슬을 차례로 돌아다니면서 목적한 오브젝트(객체)를 결정하는 방법
+ *
+ * 요청의 처리를 위한 책임자를 찾는데 순환이라는 과정을 거쳐야 하므로 if-statement 등을 사용하여 직접
+ * 할당하는 경우보다 처리 속도도가 느려지게 됨
  */
 public class chainofResponsibilityTest {
 
