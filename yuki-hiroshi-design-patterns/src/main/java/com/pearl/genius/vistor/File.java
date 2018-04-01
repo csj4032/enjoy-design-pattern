@@ -20,7 +20,8 @@ public class File extends Entry {
 		return size;
 	}
 
-	public void accept(Visitor v) {
-		v.visit(this);
+	// Double dispatch
+	public void accept(Visitor visitor) {
+		visitor.visit(this);
 	}
 }

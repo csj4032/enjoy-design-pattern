@@ -5,6 +5,11 @@ import com.pearl.genius.vistor.File;
 import com.pearl.genius.vistor.ListVisitor;
 import org.junit.Test;
 
+/**
+ * 처리를 데이ㅣ터 구조에서 분리하는 일
+ * Double Dispatch
+ * Open-Closed Principle
+ */
 public class VisitorTest {
 
 	@Test

@@ -1,8 +1,14 @@
 package com.pearl.genius.chainofResponsibility;
 
-public class Main {
+import org.junit.Test;
 
-	public static void main(String[] args) {
+/**
+ * 복수의 오브젝트(객체)를 사슬(chain)처럼 연결 해 두면, 그 오브젝트(객체)의 사슬을 차례로 돌아다니면서 목적한 오브젝트(객체)를 결정하는 방법
+ */
+public class chainofResponsibilityTest {
+
+	@Test
+	public void chainTest() {
 		Support alice = new NoSupport("Alice");
 		Support bob = new LimitSupport("Bob", 100);
 		Support charlie = new SpecialSupport("Charlie", 429);

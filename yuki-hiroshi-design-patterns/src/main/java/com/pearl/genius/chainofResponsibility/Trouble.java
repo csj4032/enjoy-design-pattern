@@ -13,6 +13,6 @@ public class Trouble {
 	}
 
 	public String toString() {
-		return "[Trouble]" + number + "]";
+		return "Trouble [" + number + "] ";
 	}
 }
