@@ -10,8 +10,8 @@ subprojects {
     apply plugin: 'java'
     apply plugin: 'idea'
 
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_1_10
+    targetCompatibility = JavaVersion.VERSION_1_10
 
     repositories {
         mavenLocal()
@@ -21,7 +21,8 @@ subprojects {
     }
 
     dependencies {
-        compile group: 'org.projectlombok', name:'lombok', version: "${lombokVersion}"
+        //compile group: 'org.projectlombok', name:'lombok', version: "${lombokVersion}"
+        compile files('libs/lombok-edge.jar')
         compile group: 'org.apache.commons', name: 'commons-lang3', version: "${commonsLangVersion}"
         compile group: 'com.google.guava', name: 'guava', version: "${guavaVersion}"
         compile group: 'org.slf4j', name: 'slf4j-api', version: "${slf4jApiVersion}"
