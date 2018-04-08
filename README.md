@@ -54,7 +54,7 @@
 ## Memento
     현재의 상태를 저장해 두고 필요할 때 복귀시키는 Undo 기능을 설정
 
-## State
+## com.pearl.genius.state
     상태를 클래스로 표현하고 상태에 적합한 switch 문의 사용을 줄여줌
 
 ## Flyweight

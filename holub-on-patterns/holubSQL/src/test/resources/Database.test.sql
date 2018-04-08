@@ -2,7 +2,7 @@ create database Dbase
 
 create table address \
 	(addrId int, street varchar, city varchar, \
-	state char(2), zip int, primary key(addrId))
+	com.pearl.genius.state char(2), zip int, primary key(addrId))
 
 create table name(first varchar(10), last varchar(10), addrId integer)
 
@@ -13,7 +13,7 @@ insert into name VALUES ('Fred',  'Flintstone', '1')
 insert into name VALUES ('Wilma', 'Flintstone', '1')
 insert into name (last,first,addrId) VALUES('Holub','Allen',(10-10*1))
 
-update address set state = "AZ"  where state = "XX"
+update address set com.pearl.genius.state = "AZ"  where com.pearl.genius.state = "XX"
 update address set zip = zip-1 where zip = (99999*1 + (10-10)/1)
 
 insert into name (last,first) VALUES( 'Please', 'Delete' )
