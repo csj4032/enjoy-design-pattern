@@ -16,9 +16,7 @@ public abstract class NumberGenerator {
 	}
 
 	public void notifyObservers() {
-		Iterator<Observer> it = observers.iterator();
-		while (it.hasNext()) {
-			Observer observer = it.next();
+		for (Observer observer : observers) {
 			observer.update(this);
 		}
 	}
