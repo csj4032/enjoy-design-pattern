@@ -1,4 +1,4 @@
-package com.pearl.genius.state;
+package state.v2;
 
 public class SoldOutState implements State {
 
