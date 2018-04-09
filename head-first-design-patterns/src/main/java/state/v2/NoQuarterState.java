@@ -1,8 +1,8 @@
 package state.v2;
 
-public class SoldOutState implements State {
+public class NoQuarterState implements State {
 
-	public SoldOutState(GumballMachine gumballMachine) {
+	public NoQuarterState(GumballMachine gumballMachine) {
 
 	}
 
