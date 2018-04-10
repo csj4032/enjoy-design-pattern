@@ -1,4 +1,4 @@
-package state.v2;
+package state.v3;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -11,14 +11,16 @@ public class GumballMachine {
 	State noQuarterState;
 	State hasQuarterState;
 	State soldState;
+	State winnerState;
 	State state;
 
-	int count = 0;
+	int count;
 
 	public GumballMachine(int numberGumballs) {
 		soldOutState = new SoldOutState(this);
 		noQuarterState = new NoQuarterState(this);
 		hasQuarterState = new HasQuarterState(this);
+		winnerState = new WinnerState(this);
 		soldState = new SoldState(this);
 
 		this.count = numberGumballs;

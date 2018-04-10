@@ -1,4 +1,4 @@
-package state.v2;
+package state.v3;
 
 public class SoldState implements State {
 
