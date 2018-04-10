@@ -20,7 +20,7 @@ public class Gamer {
 	}
 
 	public void bet() {
-		int dice = random.nextInt(6) + 1;
+		var dice = random.nextInt(6) + 1;
 		if (dice == 1) {
 			money += 100;
 			System.out.println("소지금이 증가했습니다.");
@@ -37,7 +37,7 @@ public class Gamer {
 	}
 
 	public Memento createMemento() {
-		Memento m = new Memento(money);
+		var m = new Memento(money);
 		return m;
 	}
 
@@ -51,7 +51,7 @@ public class Gamer {
 	}
 
 	private String getFruit() {
-		String prefix = "";
+		var prefix = "";
 		if (random.nextBoolean()) {
 			prefix = "맛있는";
 		}
