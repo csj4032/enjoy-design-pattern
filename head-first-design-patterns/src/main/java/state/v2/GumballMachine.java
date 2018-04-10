@@ -2,9 +2,11 @@ package state.v2;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
 public class GumballMachine {
 
 	State soldOutState;
@@ -38,5 +40,36 @@ public class GumballMachine {
 		if (count != 0) {
 			count = count - 1;
 		}
+	}
+
+	public void turnCrank() {
+		state.insertQuarter();
+	}
+
+	public void ejectQuarter() {
+		state.ejectQuarter();
+	}
+
+	public void refill(int count) {
+		this.count += count;
+		System.out.println("The gumball");
+		state.refill();
+	}
+
+	public void setState(State state) {
+		this.state = state;
+	}
+
+	public String toString() {
+		StringBuffer result = new StringBuffer();
+		result.append("\nMighty Gumball, Inc.");
+		result.append("\nJava-enabled Standing Gumball Model #2004");
+		result.append("\nInventory: " + count + " gumball");
+		if (count != 1) {
+			result.append("s");
+		}
+		result.append("\n");
+		result.append("Machine is " + state + "\n");
+		return result.toString();
 	}
 }
