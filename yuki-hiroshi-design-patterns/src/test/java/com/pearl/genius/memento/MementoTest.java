@@ -1,10 +1,15 @@
 package com.pearl.genius.memento;
 
 import com.pearl.genius.memento.game.Gamer;
+import org.junit.Test;
 
-public class Main {
+/**
+ * 메멘토 패턴(memento pattern)은 객체를 이전 상태로 되돌릴 수 있는 기능을 제공하는 소프트웨어 디자인 패턴
+ */
+public class MementoTest {
 
-	public static void main(String[] args) {
+	@Test
+	public void test() {
 		var gamer = new Gamer(100);
 		var memento = gamer.createMemento();
 

@@ -16,9 +16,5 @@ public class RandomNumberGenerator extends NumberGenerator {
 	@Override
 	public void execute() {
 		Stream.generate(() -> number = random.nextInt(50)).limit(20).forEach(n -> notifyObservers());
-//		Stream.iterate(0, n -> n + 1).limit(20).forEach(n -> {
-//			number = random.nextInt(50);
-//			notifyObservers();
-//		});
 	}
 }
