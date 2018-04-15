@@ -8,8 +8,7 @@ public class Main {
 //			System.out.println("Example : Java Main 1212123");
 //			System.exit(0);
 //		}
-
-		BigString bs = new BigString("00");
+		BigString bs = new BigString("0123456789");
 		bs.print();
 	}
 }

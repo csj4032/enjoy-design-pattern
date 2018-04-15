@@ -2,6 +2,8 @@ package state.v1;
 
 import lombok.ToString;
 
+import java.util.Random;
+
 @ToString
 public class GumballMachine {
 
@@ -9,6 +11,7 @@ public class GumballMachine {
 	private final static int NO_QUARTER = 1;
 	private final static int HAS_QUARTER = 2;
 	private final static int SOLD = 3;
+	private final static int WINNER = 4;
 	private int count;
 
 	int state = SOLD_OUT;
@@ -46,6 +49,8 @@ public class GumballMachine {
 		}
 	}
 
+	private Random randomWinner = new Random(System.currentTimeMillis());
+
 	public void turnCrank() {
 		if (state == SOLD) {
 			System.out.println("손잡이는 한번만 돌려주세요");
@@ -55,7 +60,11 @@ public class GumballMachine {
 			System.out.println("매진되었습니다.");
 		} else if (state == HAS_QUARTER) {
 			System.out.println("손잡이를 돌리셨습니다.");
-			state = SOLD;
+			if(randomWinner.nextBoolean()) {
+				state = WINNER;
+			} else{
+				state = SOLD;
+			}
 			dispense();
 		}
 	}
@@ -64,6 +73,15 @@ public class GumballMachine {
 		if (state == SOLD) {
 			System.out.println("알맹이가 나가고 있습니다.");
 			count = count - 1;
+			if (count == 0) {
+				System.out.println("더 이상 알맹이가 없습니다.");
+				state = SOLD_OUT;
+			} else {
+				state = NO_QUARTER;
+			}
+		}else if(state == WINNER) {
+			System.out.println("알맹이가 나가고 있습니다.");
+			count = count - 2;
 			if (count == 0) {
 				System.out.println("더 이상 알맹이가 없습니다.");
 				state = SOLD_OUT;
