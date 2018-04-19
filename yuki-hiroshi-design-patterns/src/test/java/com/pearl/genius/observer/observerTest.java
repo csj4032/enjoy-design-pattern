@@ -15,7 +15,6 @@ public class observerTest {
 	@Test
 	public void test() {
 		NumberGenerator generator = new RandomNumberGenerator();
-		NumberGenerator generator2 = new RandomNumber2Generator();
 
 		Observer observer1 = new DigitObserver();
 		Observer observer2 = new GraphObserver();
@@ -24,12 +23,5 @@ public class observerTest {
 		generator.addObserver(observer2);
 		generator.execute();
 
-		System.out.println();
-
-		generator2.addObserver(observer1);
-		generator2.addObserver(observer2);
-		generator2.execute();
-
-		System.out.println();
 	}
 }
